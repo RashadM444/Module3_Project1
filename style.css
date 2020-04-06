@@ -1,0 +1,126 @@
+* {
+    font-family: "Baloo Chettan 2", sans-serif;
+    box-sizing: border-box;
+    /* font-weight: normal; */
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 336px;
+    min-height: 236px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body {
+    /* width: 90%; */
+}
+
+.header {
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    width: 334px;
+    height: 28px;
+    background: #FFDC40;
+}
+
+.todohead {
+    text-align: center;
+    margin-top: 19px;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 286px;
+    height: 40px;
+}
+
+.for-sort-icon {
+    width: 280px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#activity {
+    text-decoration: none;
+    border: none;
+    height: 37px;
+    resize: none;
+}
+
+#remove {
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 71px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C4C4C4;
+    background-color: white;
+}
+
+.footer {
+    margin-top: 18px;
+}
+
+.adding-button {
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 42px;
+    background: #833AE0;
+    border-radius: 71px;
+    color: #ffffff;
+    border: none;
+}
+
+.plus {
+    font-size: 14px;
+    line-height: 16px;
+    width: 42px;
+    height: 42px;
+    background: #9953F1;
+    border-radius: 71px;
+    color: #ffffff;
+    position: relative;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 42px;
+    width: 100px;
+}
