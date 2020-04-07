@@ -1,5 +1,6 @@
 let button = document.querySelector('#for-adding');
 let theList = document.querySelector('#list')
+let sortButton = document.querySelector('#sort');
 
 
 
@@ -29,4 +30,16 @@ let removeListItem = (e) => {
     e.target.parentNode.remove();
 }
 
+let changeSortColor = (e) => {
+    e.target.src = 'images/sortdownblack.png'
+}
+
+let changeSortColorBack = (e) => {
+    e.target.src = 'images/sortdowngrey.png'
+}
+
+
+
+sortButton.addEventListener('mouseover', changeSortColor);
+sortButton.addEventListener('mouseout', changeSortColorBack);
 button.addEventListener('click', addListItem);

@@ -135,6 +135,11 @@ li {
     justify-content: center;
 }
 
+.plus:hover {
+    background-color: #833AE0;
+    border: 1px solid #C4C4C4;
+}
+
 .add {
     display: flex;
     justify-content: center;
