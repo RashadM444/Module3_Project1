@@ -38,6 +38,9 @@ body {
     margin-top: 19px;
 }
 
+
+/*For list items*/
+
 .listItem {
     display: flex;
     flex-direction: row;
@@ -49,6 +52,10 @@ body {
     width: 286px;
     height: 40px;
     margin-top: 5px;
+}
+
+.listItem:hover {
+    transform: scale(1.05, 1.05);
 }
 
 li {
@@ -63,13 +70,17 @@ li {
     height: 40px;
 }
 
-.for-sort-icon {
-    width: 280px;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.dragging {
+    background-color: #FFDC40;
+    opacity: 0.6;
 }
+
+.dragging textarea {
+    background-color: #FFDC40;
+}
+
+
+/*For text area*/
 
 .activity {
     text-decoration: none;
@@ -80,6 +91,9 @@ li {
     line-height: 37px;
     width: 222.42px;
 }
+
+
+/*For remove button*/
 
 .remove {
     border: 1px solid #C4C4C4;
@@ -99,6 +113,9 @@ li {
     border: none;
     color: white;
 }
+
+
+/*For Add button*/
 
 .footer {
     margin-top: 18px;
@@ -147,6 +164,14 @@ li {
     align-items: center;
     height: 42px;
     width: 100px;
+}
+
+.for-sort-icon {
+    width: 280px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .sorticon {
