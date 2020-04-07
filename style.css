@@ -48,6 +48,19 @@ body {
     border-radius: 10px;
     width: 286px;
     height: 40px;
+    margin-top: 5px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 286px;
+    height: 40px;
 }
 
 .for-sort-icon {
@@ -58,16 +71,17 @@ body {
     margin-bottom: 10px;
 }
 
-#activity {
+.activity {
     text-decoration: none;
     border: none;
     height: 37px;
     resize: none;
     font-size: 18px;
     line-height: 37px;
+    width: 222.42px;
 }
 
-#remove {
+.remove {
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 71px;
@@ -80,7 +94,7 @@ body {
     background-color: white;
 }
 
-#remove:hover {
+.remove:hover {
     background-color: #833AE0;
     border: none;
     color: white;
@@ -103,6 +117,7 @@ body {
     border-radius: 71px;
     color: #ffffff;
     border: none;
+    margin-bottom: 15px;
 }
 
 .plus {
