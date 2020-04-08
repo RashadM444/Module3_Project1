@@ -62,16 +62,17 @@ let sortList = () => {
     sortButton.classList.toggle('arrowUp')
     let ul = document.querySelector('#list'); //defines the whole element of ul tag within html
     let array = Array.from(newLis); // creates array of new list items
+
     let sortedArray;
 
-    if (sortButton.classList.contains('arrowUp')) {
-        // sortButton.src = 'images/sortupblack.png';
 
-        sortedArray = array.sort((a, b) => a.childNodes[1].innerHTML - b.childNodes[1].innerHTML);
+    if (sortButton.classList.contains('arrowUp')) {
+        sortButton.src = 'images/sortupblack.png';
+        sortedArray = array.sort((a, b) => a.childNodes[1].value > b.childNodes[1].value ? 1 : -1);
 
     } else {
-        // sortButton.src = 'images/sortdownblack.png';
-        sortedArray = array.sort((a, b) => b.childNodes[1].innerHTML - a.childNodes[1].innerHTML);
+        sortButton.src = 'images/sortdownblack.png';
+        sortedArray = array.sort((a, b) => b.childNodes[1].value < a.childNodes[1].value ? -1 : 1);
     }
 
     ul.innerHTML = '';
@@ -99,6 +100,7 @@ let dragListItems = () => {
         let listArea = document.querySelector('#list');
         listArea.addEventListener('dragover', (e) => {
             e.preventDefault();
+            if (!e.target.matches('.fourdots')) return
             let afterElement = getDragAfterElement(listArea, e.clientY);
             console.log(afterElement);
             let draggable = document.querySelector('.dragging');
