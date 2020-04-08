@@ -64,8 +64,10 @@ let sortList = () => {
     let sortedArray;
 
     if (sortButton.classList.contains('arrowUp')) {
+        sortButton.src = 'images/sortupblack.png';
         sortedArray = array.sort((a, b) => a.childNodes[1].innerHTML - b.childNodes[1].innerHTML);
     } else {
+        sortButton.src = 'images/sortdownblack.png';
         sortedArray = array.sort((a, b) => b.childNodes[1].innerHTML - a.childNodes[1].innerHTML);
     }
 
