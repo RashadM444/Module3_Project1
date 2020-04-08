@@ -8,6 +8,7 @@ let addListItem = (e) => {
     let newFourdots = document.createElement('img'); //creates a new dots icon for dragging
     newFourdots.src = "images/fourdots.png";
     newFourdots.classList.add('movable');
+    newFourdots.classList.add('fourdots');
     let newRemover = document.createElement('button'); //creates a bew x button to delete
     newRemover.innerHTML = '&#10005;';
     newRemover.classList.add('remove');

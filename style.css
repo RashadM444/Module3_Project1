@@ -72,7 +72,7 @@ li {
 
 .dragging {
     background-color: #FFDC40;
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .dragging textarea {
@@ -137,6 +137,12 @@ li {
     margin-bottom: 15px;
 }
 
+.adding-button:hover {
+    cursor: pointer;
+    font-size: 16px;
+    transition: 500ms;
+}
+
 .plus {
     font-size: 14px;
     line-height: 16px;
@@ -176,5 +182,18 @@ li {
 
 .sorticon {
     height: 15px;
+    width: 25px;
+}
+
+.movable:hover {
+    cursor: grab;
+}
+
+#fourdots:hover {
+    cursor: none;
+}
+
+.fourdots {
+    height: 25px;
     width: 25px;
 }
